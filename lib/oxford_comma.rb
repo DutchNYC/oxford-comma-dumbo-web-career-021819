@@ -10,3 +10,9 @@ def oxford_comma(array)
   if array.length==2
     return array.join (" and ")
 end
+
+def oxford_comma(array)
+ if array.length==3
+   array.insert(-1," and")
+   return array.join (, )
+end
